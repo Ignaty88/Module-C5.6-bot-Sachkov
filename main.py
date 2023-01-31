@@ -28,7 +28,7 @@ def convert(massege: telebot.types.Message):
     values = massege.text.lower()
 
     try:
-        values = values.split(" ")
+        values = values.split()
 
         if len(values) != 3:
             raise ConvertionExeption("Много параметров")
